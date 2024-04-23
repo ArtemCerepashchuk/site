@@ -1,0 +1,91 @@
+/* --- Напишите код ниже --- */
+.carbon{
+	display: none;
+	width: 300px;
+	height: auto;
+	background-color: cornflowerblue;
+}
+.span{
+	color:dodgerblue;
+}
+.span:hover .carbon{
+	display: block;
+	position: absolute;
+}
+
+
+
+
+
+/* --- Напишите код выше --- */
+
+/* --- Не меняйте код ниже --- */
+
+body {
+    font-family: Verdana;
+    font-size: 16px;
+    margin: 20px auto;
+    color: #333;
+    width: 600px;
+    min-width: 600px;
+}
+
+h1 {
+    font-size: 26px;
+    margin: 50px 0 40px;
+}
+
+h3 {
+    font-size: 12px;
+    font-style: italic;
+    font-weight: normal;
+    color: #999;
+    line-height: 1.5em;
+}
+
+header {
+    padding-bottom: 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to left, #ccc, #05f) 0 0 100%;
+    margin-bottom: 40px;
+}
+
+img {
+    width: 100%;
+    max-width: 700px;
+    margin: 30px 0;
+}
+
+p {
+    line-height: 1.7em;
+}
+
+footer {
+    text-align: right;
+    font-size: 24px;
+    margin: 40px 0px 60px;
+    color: #aaa;
+}
+
+sidebar {
+    display: none;
+    width: 400px;
+    background: #3989c9; 
+    color: #fff; 
+    padding: 1em; 
+    border-radius: 5px; 
+    font-size: 12px;
+    line-height: 1.4em;
+    font-style: italic;
+}
+
+span:hover::before {
+    content: '';
+    position: absolute;
+    top: 1.4em; left: 20px;
+    width: 0; height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #3989c9;
+}
