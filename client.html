@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id = "FirstHeader">Hello World!</h1>
+    <script>
+        let ws = new WebSocket("ws://localhost:3000");
+        ws.onopen = function() {
+            FirstHeader.innerHTML = "Compleate!";
+        }
+    </script>
+</body>
+</html>
